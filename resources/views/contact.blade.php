@@ -1,0 +1,38 @@
+<x-layouts.app>
+    <div class="w-[80%] md:w-[70%] mx-auto max-w-5xl mt-10" style="font-family: Almarai, serif;">
+        <h1 class="visually-hidden">Al Midad Arabic Magazine</h1>
+        <h2 class="w-fit mx-auto pb-2 border-b-2 border-[#866D8A] mb-16 font-bold text-lg px-3">إتصل بنا</h2>
+        <div class="w-full grid sm:grid-cols-2 gap-13 md:gap-12 py-4  min-h-max">
+            <div class="grid mx-auto md:hidden">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d15613.794888177848!2d75.38191601960166!3d11.943403287600184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3ba43c337b3890c9%3A0xdd3eea3419721646!2sKattampally%20-%20Kannadiparamba%20-%20Munderi%20Rd%2C%20Chelery%2C%20Kannadiparamba%2C%20Kattampally%2C%20Kerala%20670604!3m2!1d11.9430584!2d75.3897954!5e0!3m2!1sen!2sin!4v1712978657432!5m2!1sen!2sin"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="px-2 hidden md:grid">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d15613.794888177848!2d75.38191601960166!3d11.943403287600184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3ba43c337b3890c9%3A0xdd3eea3419721646!2sKattampally%20-%20Kannadiparamba%20-%20Munderi%20Rd%2C%20Chelery%2C%20Kannadiparamba%2C%20Kattampally%2C%20Kerala%20670604!3m2!1d11.9430584!2d75.3897954!5e0!3m2!1sen!2sin!4v1712978657432!5m2!1sen!2sin"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="text-lg w-full px-2" dir="ltr">
+                <p class="font-semibold">Al Midad Arabic Magazine,<br>
+                    Darul Hasanath Islamic College,<br>
+                    Kannadiparamba, Niduvat P.O, Narath,<br>
+                    Kannur, Kerala 670601</p>
+                <p><i class="fa fa-envelope"></i> Email: <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=almidad@gmail.com"
+                        class="py-1 font-semibold">almidadarabic@gmail.com</a></p>
+                <p><i class="fa fa-phone"></i> Contact: <a href="tel:+919747544962" class="py-1 font-semibold">+91
+                        9747544962</a></p>
+                <p><i class="fa fa-whatsapp"></i> Whatsapp: <a href="https://wa.me/919544043504"
+                        class="py-1 font-semibold">+91 75111 52231</a></p>
+                <p><i class="fa fa-globe"></i> Website: <a href="/"
+                        class="py-1 font-semibold">almidad.darulhasanath.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</x-layouts.app>

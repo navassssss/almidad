@@ -1,0 +1,145 @@
+[23-Apr-2026 01:55:35 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable. in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php:1216
+Stack trace:
+#0 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(968): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(832): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#3 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(763): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#4 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#5 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(289): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#6 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(219): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#7 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#8 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#9 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():255}(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#10 {main}
+  thrown in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 1216
+[23-Apr-2026 01:55:35 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable. in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php:1216
+Stack trace:
+#0 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(968): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(832): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#3 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(763): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#4 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#5 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(289): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#6 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(219): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#7 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#8 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(232): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#9 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#10 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():255}()
+#11 {main}
+  thrown in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 1216
+[23-Apr-2026 01:55:35 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable. in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php:1216
+Stack trace:
+#0 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(968): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(832): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#3 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(763): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#4 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#5 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(289): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#6 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(219): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#7 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#8 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#9 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():255}(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#10 {main}
+  thrown in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 1216
+[23-Apr-2026 01:55:35 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable. in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php:1216
+Stack trace:
+#0 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(968): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(832): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#3 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(763): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#4 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#5 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(289): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#6 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(219): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#7 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#8 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(232): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#9 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#10 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():255}()
+#11 {main}
+  thrown in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 1216
+[23-Apr-2026 01:55:35 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable. in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php:1216
+Stack trace:
+#0 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(968): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(832): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#3 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(763): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#4 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#5 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(289): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#6 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(219): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#7 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#8 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#9 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():255}(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#10 {main}
+  thrown in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 1216
+[23-Apr-2026 01:55:35 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable. in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php:1216
+Stack trace:
+#0 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(968): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(832): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#3 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(763): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#4 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#5 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(289): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#6 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(219): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#7 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#8 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(232): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#9 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#10 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():255}()
+#11 {main}
+  thrown in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 1216
+[23-Apr-2026 01:58:57 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable. in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php:1216
+Stack trace:
+#0 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(968): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(832): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#3 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(763): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#4 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#5 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(289): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#6 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(219): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#7 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#8 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#9 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():255}(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#10 {main}
+  thrown in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 1216
+[23-Apr-2026 01:58:57 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable. in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php:1216
+Stack trace:
+#0 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(968): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(832): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#3 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(763): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#4 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#5 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(289): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#6 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(219): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#7 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#8 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(232): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#9 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#10 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():255}()
+#11 {main}
+  thrown in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 1216
+[23-Apr-2026 01:59:02 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable. in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php:1216
+Stack trace:
+#0 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(968): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(832): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#3 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(763): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#4 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#5 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(289): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#6 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(219): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#7 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#8 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#9 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():255}(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#10 {main}
+  thrown in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 1216
+[23-Apr-2026 01:59:02 UTC] PHP Fatal error:  Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable. in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php:1216
+Stack trace:
+#0 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(968): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(832): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1078): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#3 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php(763): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#4 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1058): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#5 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(289): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#6 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(219): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#7 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(196): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#8 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(232): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#9 /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#10 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():255}()
+#11 {main}
+  thrown in /var/www/61e569f6-47a3-45b4-8443-d5940f166a81/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 1216
