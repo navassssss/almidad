@@ -92,11 +92,11 @@ class CategoryResource extends Resource
                     ->tooltip('Enable this to display the category on the homepage.')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
+                    ->formatStateUsing(fn ($state) => $state?->format('d M Y h:i A'))
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
+                    ->formatStateUsing(fn ($state) => $state?->format('d M Y h:i A'))
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])

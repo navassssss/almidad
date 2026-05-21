@@ -57,7 +57,7 @@ class SubscriptionResource extends Resource
                 Tables\Columns\TextColumn::make('phone_number')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('s_month')
-                    ->date()
+                    ->formatStateUsing(fn ($state) => $state?->format('d M Y'))
                     ->label('Starting month')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('years')
@@ -71,11 +71,11 @@ class SubscriptionResource extends Resource
                 })
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
+                    ->formatStateUsing(fn ($state) => $state?->format('d M Y h:i A'))
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
+                    ->formatStateUsing(fn ($state) => $state?->format('d M Y h:i A'))
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])

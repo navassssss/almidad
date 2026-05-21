@@ -63,14 +63,14 @@ class EditionResource extends Resource
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('published_date')
-                    ->date()
+                    ->formatStateUsing(fn ($state) => $state?->format('d M Y'))
                     ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
+                    ->formatStateUsing(fn ($state) => $state?->format('d M Y h:i A'))
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
+                    ->formatStateUsing(fn ($state) => $state?->format('d M Y h:i A'))
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
