@@ -36,7 +36,7 @@ class AdminPanelProvider extends PanelProvider
             ->brandLogoHeight('3rem')
             ->favicon(asset('images/favicon.png'))
             ->login()
-            ->spa()
+        ->spa()
             ->unsavedChangesAlerts()
             ->defaultThemeMode(ThemeMode::Light)
             // ->colors([

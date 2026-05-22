@@ -82,9 +82,15 @@
                     <a href="https://www.facebook.com/almidadarabic" target="_blank"><img class="h-5"
                             src="{{ asset('images/fbicon.png') }}" loading="lazy" alt="fb"></a>
                     @if($article->category)
-                        <a href="whatsapp://send?text=Check out this page: {{$article->topic}} -  {{ route('article.show', ['category' => $article->category->slug, 'article' => $article->slug]) }}"
-                            target="_blank" data-action="share/whatsapp/share" target="_blank"><img class="h-5"
+                        <a href="whatsapp://send?text={{ rawurlencode($article->topic . " - " . urldecode(route('article.show', ['category' => $article->category->slug, 'article' => $article->slug]))) }}"
+                            target="_blank" data-action="share/whatsapp/share"><img class="h-5"
                                 src="{{ asset('images/whatsapp.png') }}" loading="lazy" alt="whatsapp"></a>
+                        <button onclick="copyDecodedUrl()" title="نسخ الرابط" class="h-5 ms-2 text-gray-500 hover:text-gray-700 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
                     @endif
                 </div>
             </div>
@@ -98,9 +104,16 @@
                     link.setAttribute('rel', 'noopener noreferrer');
                 });
             });
+
+            function copyDecodedUrl() {
+                const decodedUrl = decodeURI("{{ route('article.show', ['category' => $article->category->slug, 'article' => $article->slug]) }}");
+                navigator.clipboard.writeText(decodedUrl).then(() => {
+                    alert('تم نسخ الرابط بنجاح!');
+                }).catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
+            }
         </script>
-
-
     @endpush
     @push('styles')
         <style>
