@@ -82,7 +82,10 @@
                     <a href="https://www.facebook.com/almidadarabic" target="_blank"><img class="h-5"
                             src="{{ asset('images/fbicon.png') }}" loading="lazy" alt="fb"></a>
                     @if($article->category)
-                        <a href="whatsapp://send?text={{ rawurlencode($article->topic . " - " . urldecode(route('article.show', ['category' => $article->category->slug, 'article' => $article->slug]))) }}"
+                        @php
+                            $cleanUrl = str_replace(' ', '%20', urldecode(route('article.show', ['category' => $article->category->slug, 'article' => $article->slug])));
+                        @endphp
+                        <a href="whatsapp://send?text={{ rawurlencode($article->topic . " - " . $cleanUrl) }}"
                             target="_blank" data-action="share/whatsapp/share"><img class="h-5"
                                 src="{{ asset('images/whatsapp.png') }}" loading="lazy" alt="whatsapp"></a>
                         <button onclick="copyDecodedUrl()" title="نسخ الرابط" class="h-5 ms-2 text-gray-500 hover:text-gray-700 transition">
@@ -106,7 +109,8 @@
             });
 
             function copyDecodedUrl() {
-                const decodedUrl = decodeURI("{{ route('article.show', ['category' => $article->category->slug, 'article' => $article->slug]) }}");
+                // Decode URI to get beautiful Arabic, then safely replace physical spaces with %20 so apps like WhatsApp don't break the link
+                const decodedUrl = decodeURI("{{ route('article.show', ['category' => $article->category->slug, 'article' => $article->slug]) }}").replace(/ /g, '%20');
                 navigator.clipboard.writeText(decodedUrl).then(() => {
                     alert('تم نسخ الرابط بنجاح!');
                 }).catch(err => {
