@@ -27,6 +27,7 @@ class AdminPanelProvider extends PanelProvider
             ->default()
             ->id('admin')
             ->path('admin')
+            ->brandName('المداد - Al Midad')
             ->homeUrl(fn() => route('home'))
             ->colors([
                 'primary' => '#4484a4',
