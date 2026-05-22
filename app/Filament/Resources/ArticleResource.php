@@ -25,38 +25,13 @@ class ArticleResource extends Resource
     {
         return $form
             ->schema([
-              Forms\Components\TextInput::make('topic')
-            ->live(onBlur: true)
-            ->afterStateUpdated(function ($state, callable $set, $get) { // <-- $get is now available
-                if (empty($state)) {
-                    $set('slug', '');
-                    return;
-                }
-
-                // Generate base slug (supports Arabic + UTF-8)
-                $slug = mb_strtolower($state, 'UTF-8');
-                $slug = preg_replace('/[^a-z0-9\p{Arabic}_\s-]+/u', '', $slug);
-                $slug = preg_replace('/[_\s-]+/u', '-', $slug);
-                $slug = trim($slug, '-');
-                $slug = mb_substr($slug, 0, 100, 'UTF-8');
-
-                // Store the base slug before modification
-                $baseSlug = $slug;
-                $counter = 1;
-
-                // Check for existing slugs (ignore current record if editing)
-                while (Article::where('slug', $slug)
-                    ->where('id', '!=', $get('id') ?? null) // <-- Safely handles null (new records)
-                    ->exists()) {
-                    $slug = $baseSlug . '-' . $counter++; // Append incrementing number
-                }
-
-                $set('slug', $slug);
-            })
-            ->required(),
-                Forms\Components\TextInput::make('slug')
-                    ->unique(ignoreRecord:true)
+                Forms\Components\TextInput::make('topic')
                     ->required(),
+                Forms\Components\TextInput::make('slug')
+                    ->unique(ignoreRecord: true)
+                    ->disabled()
+                    ->dehydrated()
+                    ->hiddenOn('create'),
                 Forms\Components\RichEditor::make('content')
                     ->required()
                     ->fileAttachmentsDirectory('attachments')
@@ -75,10 +50,12 @@ class ArticleResource extends Resource
                             ->columnSpanFull(),
                     ])
                     ->native(false)
-                    ->searchable() // Added searchable to allow finding authors without preloading all of them
+                    ->preload() // Restored
+                    ->searchable()
                     ->relationship('author', 'name'),
                 Forms\Components\Select::make('category_id')
                     ->searchable()
+                    ->preload() // Restored
                     ->native(false)
                     ->relationship('category', 'a_name')
                     ->createOptionForm([
