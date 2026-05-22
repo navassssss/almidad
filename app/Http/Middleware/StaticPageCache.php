@@ -12,8 +12,21 @@ class StaticPageCache
             return $next($request);
         }
 
-        $path = trim($request->path(), '/');
-        $file = public_path('static/' . ($path ?: 'home') . '.html');
+        $path = urldecode(trim($request->path(), '/'));
+        
+        // Ensure the filename length doesn't exceed filesystem limits (255 chars)
+        // If it's still too long after decoding, we hash the basename as a fallback
+        $pathParts = explode('/', $path ?: 'home');
+        $basename = array_pop($pathParts);
+        
+        if (strlen($basename) > 240) {
+            $basename = md5($basename);
+        }
+        
+        $pathParts[] = $basename;
+        $safePath = implode('/', $pathParts);
+        
+        $file = public_path('static/' . $safePath . '.html');
 
         if (file_exists($file)) {
             return response()->file($file);
