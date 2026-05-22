@@ -23,9 +23,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-</head>
-@vite('resources/css/app.css')
-<style>
+    
+    @vite('resources/css/app.css')
+    <style>
     @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Noto+Naskh+Arabic:wght@600&family=Noto+Sans+Arabic:wght@100..900&family=Vazirmatn:wght@100..900&display=swap');
 
     .swiper {
@@ -57,6 +57,7 @@
     }
 </style>
 @stack('styles')
+</head>
 
 <body class="bg-[#FFFFFF]" data-aos-easing="ease-in-out" style="font-family: Almarai, serif;">
 

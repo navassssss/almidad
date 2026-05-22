@@ -29,7 +29,11 @@ class StaticPageCache
         $file = public_path('static/' . $safePath . '.html');
 
         if (file_exists($file)) {
-            return response()->file($file);
+            return response()->file($file, [
+                'Cache-Control' => 'no-cache, no-store, must-revalidate',
+                'Pragma' => 'no-cache',
+                'Expires' => '0',
+            ]);
         }
 
         $response = $next($request);
@@ -41,6 +45,10 @@ class StaticPageCache
 
             $cachedContent = $response->getContent() . "\n<!-- SERVED FROM STATIC CACHE -->";
             file_put_contents($file, $cachedContent);
+            
+            $response->headers->set('Cache-Control', 'no-cache, no-store, must-revalidate');
+            $response->headers->set('Pragma', 'no-cache');
+            $response->headers->set('Expires', '0');
         }
 
         return $response;
