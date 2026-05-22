@@ -38,7 +38,7 @@ class ArticleResource extends Resource
                 $slug = preg_replace('/[^a-z0-9\p{Arabic}_\s-]+/u', '', $slug);
                 $slug = preg_replace('/[_\s-]+/u', '-', $slug);
                 $slug = trim($slug, '-');
-                $slug = substr($slug, 0, 100);
+                $slug = mb_substr($slug, 0, 100, 'UTF-8');
 
                 // Store the base slug before modification
                 $baseSlug = $slug;
@@ -75,11 +75,10 @@ class ArticleResource extends Resource
                             ->columnSpanFull(),
                     ])
                     ->native(false)
-                    ->preload()
+                    ->searchable() // Added searchable to allow finding authors without preloading all of them
                     ->relationship('author', 'name'),
                 Forms\Components\Select::make('category_id')
                     ->searchable()
-                    ->preload()
                     ->native(false)
                     ->relationship('category', 'a_name')
                     ->createOptionForm([
